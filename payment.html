@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Payment | Jashn-E-Junction</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script>
+    function togglePaymentFields() {
+      const method = document.getElementById('paymentMethod').value;
+      document.getElementById('cardFields').classList.add('hidden');
+      document.getElementById('upiField').classList.add('hidden');
+      document.getElementById('codField').classList.add('hidden');
+
+      if (method === 'card') {
+        document.getElementById('cardFields').classList.remove('hidden');
+      } else if (method === 'upi') {
+        document.getElementById('upiField').classList.remove('hidden');
+      } else {
+        document.getElementById('codField').classList.remove('hidden');
+      }
+    }
+
+    window.onload = function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const amount = urlParams.get('amount');
+      if (amount) {
+        document.getElementById('amt').innerHTML = `Please make the payment of ₹${amount}`;
+        document.getElementById('amt1').innerHTML = `PAY ₹${amount} NOW`;
+      }
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Jashn-E-Junction</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <form>
+    <h2 id="amt">Please make the payment</h2>
+    <div class="row">
+      <div class="column">
+        <h3 class="title">Billing Address</h3>
+
+        <div class="input-box">
+          <span>Full Name:</span>
+          <input type="text" placeholder="Your Name" required />
+        </div>
+
+        <div class="input-box">
+          <span>Email:</span>
+          <input type="email" placeholder="example@example.com" required />
+        </div>
+
+        <div class="input-box">
+          <span>Address:</span>
+          <input type="text" placeholder="Room - Street - Locality" required />
+        </div>
+
+        <div class="input-box">
+          <span>City:</span>
+          <input type="text" required />
+        </div>
+
+        <div class="flex">
+          <div class="input-box">
+            <span>State:</span>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <span>Pin Code:</span>
+            <input type="number" placeholder="123456" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3 class="title">Payment</h3>
+
+        <div class="input-box">
+          <span>Payment Method:</span>
+          <select id="paymentMethod" onchange="togglePaymentFields()">
+            <option value="card">Credit/Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="cod">Cash on Delivery</option>
+          </select>
+        </div>
+
+        <div id="cardFields">
+          <div class="input-box">
+            <span>Cards Accepted:</span>
+            <img src="imgcards.png" alt="Accepted Cards" />
+          </div>
+          <div class="input-box">
+            <span>Name on Card:</span>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-box">
+            <span>Card Number:</span>
+            <input type="number" placeholder="1111 2222 3333 4444" />
+          </div>
+          <div class="input-box">
+            <span>Expiry Month:</span>
+            <input type="text" placeholder="August" />
+          </div>
+          <div class="flex">
+            <div class="input-box">
+              <span>Expiry Year:</span>
+              <input type="number" placeholder="2025" />
+            </div>
+            <div class="input-box">
+              <span>CVV:</span>
+              <input type="number" placeholder="123" />
+            </div>
+          </div>
+        </div>
+
+        <div id="upiField" class="hidden">
+          <div class="input-box">
+            <span>UPI ID:</span>
+            <input type="text" placeholder="yourname@bank" />
+          </div>
+        </div>
+
+        <div id="codField" class="hidden">
+          <div class="cod-message">
+            You have selected <strong>Cash on Delivery</strong>. Please be ready to pay in person.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn" id="amt1">PAY NOW</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Jashn-E-Junction. All rights reserved.
+</footer>
+
+</body>
+</html>

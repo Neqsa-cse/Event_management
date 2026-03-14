@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  * {box-sizing: border-box;}
+  
+  body {margin: 0;font-family: 'Poppins', sans-serif;background: antiquewhite;}
+  
+  header {background:rgba(0,87,0,2);
+    padding: 15px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;}
+  
+  header h1 {margin: 0;
+    font-weight: 600;
+    font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(2, 0, 0, 1.0);}
+  
+  nav a {
+    color: floralwhite;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 1000;
+    font-size: 17px;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0);
+  }
+  nav a:hover {
+    color: lawngreen;
+  }
+  .hero {
+    background: linear-gradient(rgba(0,87,0,0.6), rgba(0,52,0,0.9)), no-repeat center/cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .hero h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+  .content-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+  }
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    color: rgba(0,87,0,2);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .feature-card {
+    background: rgba(0,52,1,.7);
+    border-radius: 12px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 5px 12px rgba(255,87,34,0.3);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255,87,34,0.5);
+  }
+  .feature-icon {
+    font-size: 50px;
+    color: #fb8c00;
+    margin-bottom: 15px;
+  }
+  .feature-title {text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: ghostwhite;
+  }
+  .feature-desc {
+    font-size:15px;
+    color:antiquewhite;
+  }
+  footer {
+    background:rgba(0,87,0,2); 
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-top: 100px;
+  }
+
+.sb
+    {
+      border: solid green 2px;
+      border-radius: 25%;
+      position: fixed;
+      right: 0px;
+      top: 0px;
+      z-index: 1;
+    }

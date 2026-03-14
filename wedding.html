@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jashn-E-Junction | Indian Event Management</title>
+  <script src="myjs.js"></script>
+   <link rel="stylesheet" type="text/css" href="pakages.css">
+</head>
+<body>
+
+<header>
+  <h1>Jashn-E-Junction</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<section id="detail">
+  <h3 style="text-align:center; font-size: 2rem; color: #b55e00;">OUR wedding day cordination packages are follows</h3>
+
+  <div class="carousel-section">
+
+    <div class="package">
+      <h2>1. Wedding Day Coordination</h2>
+      <p class="feature-desc">
+      ✓ On-site coordinator for 6 hours<br>
+      ✓ Vendor arrival management<br>
+      ✓ Timeline supervision (ceremony & reception)<br>
+      ✓ Basic guest assistance<br>
+      ✓ Final rehearsal support (1 hour)<br><br>
+      <b>Starting at ₹20,000</b><br><br>
+      <a onclick="javascript:pay(20000)">Book Now</a>
+      
+    </p>
+      <div class="carousel" id="carousel-haldi">
+        <img src="Ceremony\img (1).jpg" class="active" />
+        <img src="Ceremony\img (2).jpg"/>
+        <img src="Ceremony\img (3).jpg"/>
+        <img src="Ceremony\img (4).jpg"/>
+        <img src="Ceremony\img (5).jpg"/>
+        <img src="Ceremony\img (6).jpg"/>
+        <img src="Ceremony\img (7).jpg"/>
+        <img src="Ceremony\img (8).jpg"/>
+        <img src="Ceremony\img (9).jpg"/>
+        <img src="Ceremony\img (10).jpg"/>
+      </div>
+      <div class="btn-group">                                 
+        <button onclick="changeImage('haldi', -1)">&#8678; Prev</button>
+        <button onclick="changeImage('haldi', 1)">Next &#8680;</button>
+        
+      </div>
+    </div>
+
+    <div class="package">
+      <h2>2. Wedding Day Coordination +</h2>
+      <p class="feature-desc">
+      ✓ Dedicated lead coordinator + 2 assistants<br>
+      ✓ Full-day coverage (up to 12 hours)<br>
+      ✓ Detailed timeline creation & distribution<br>
+      ✓ Complete vendor communication & supervision<br>
+      ✓ Guest management with hospitality team<br>
+      ✓ Emergency kit & on-the-spot problem solving<br>
+      ✓ Coordination for baraat, phere, vidai, etc.<br>
+      ✓ Real-time schedule tracking via mobile updates<br><br>
+      <b>Starting at ₹45,000</b><br><br>
+      <a onclick="javascript:pay(45000)">Book Now</a>
+    </p>
+      <div class="carousel" id="carousel-haldi-plus">
+       <img src="Ceremony\img (11).jpg" class="active" />
+        <img src="Ceremony\img (12).jpg"/>
+        <img src="Ceremony\img (13).jpg"/>
+        <img src="Ceremony\img (14).jpg"/>
+        <img src="Ceremony\img (15).jpg"/>
+        <img src="Ceremony\img (16).jpg"/>
+        <img src="Ceremony\img (17).jpg"/>
+        <img src="Ceremony\img (18).jpg"/>
+        <img src="Ceremony\img (19).jpg"/>
+              
+      </div>
+      <div class="btn-group">
+        <button onclick="changeImage('haldi-plus', -1)">< Prev</button>
+        <button onclick="changeImage('haldi-plus', 1)">Next ></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer>
+  <p>&copy; 2025 Jashn-E-Junction. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>

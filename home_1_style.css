@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #121212; /* Keep secondary background */
+  color: #eee; /* Keep secondary text color */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #FF4E50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #F9D423;
+}
+
+header {
+  background: #1C1C1C;
+  padding: 15px 50px; /* From primary */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); /* Keep secondary shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600; /* From primary */
+  font-size: 50px;   /* From primary */
+  color: #F9D423;    /* From secondary */
+  text-shadow: 2px 2px 5px rgba(2, 0, 0, 1.0); /* From primary */
+}
+
+nav {
+  display: flex;
+  gap: 50px; /* mimic margin-left: 50px from primary */
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: floralwhite; /* From primary */
+  font-weight: 1000;  /* From primary */
+  font-size: 17px;    /* From primary */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0); /* From primary */
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #FF4E50;
+  bottom: -4px;
+  left: 0;
+  border-radius: 2px;
+}
+
+nav a:hover {
+  color: lawngreen; /* From primary */
+}
+
+.hero {
+  background: linear-gradient(135deg, #FF4E50 0%, #F9D423 100%);
+  color: #121212;
+  height: 75vh; /* From primary */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.4rem; /* From primary */
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: #121212;
+  color: #F9D423;
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(249, 212, 35, 0.6);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-primary:hover {
+  background-color: #F9D423;
+  color: #121212;
+  box-shadow: 0 7px 20px rgba(18, 18, 18, 0.8);
+}
+
+.content-section {
+  max-width: 1200px;
+  margin: 50px auto; /* From primary */
+  padding: 0 20px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600; /* From primary */
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+  color: #F9D423;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* from secondary, slightly wider spacing */
+}
+
+.feature-card {
+  background: #1C1C1C;
+  padding: 30px; /* From primary */
+  border-radius: 15px;
+  width: 280px; /* Keep fixed like primary */
+  box-shadow: 0 6px 18px rgba(249, 212, 35, 0.4);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.5); /* Mix of primary and secondary */
+}
+
+.feature-card h4,
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #F9D423;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0);
+}
+
+.feature-desc {
+  font-size: 15px;
+  color: #ccc;
+}
+
+footer {
+  background: #1C1C1C;
+  padding: 15px 20px; /* From primary */
+  text-align: center;
+  font-size: 15px; /* From primary */
+  color: #888;
+  margin-top: 100px; /* From primary */
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2.25rem;
+  }
+}
+
+.sb {
+  border: solid green 2px;
+  border-radius: 25%;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}

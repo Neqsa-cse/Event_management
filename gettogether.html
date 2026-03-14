@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jashn-E-Junction | Indian Event Management</title>
+  <script src="myjs.js"></script>
+ <link rel="stylesheet" type="text/css" href="pakages.css">
+</head>
+<body>
+
+<header>
+  <h1>Jashn-E-Junction</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section id="detail">
+  <h3 style="text-align:center; font-size: 2rem; color: #b55e00;">OUR family together planning packages are follows</h3>
+
+  <div class="carousel-section">
+
+    <div class="package">
+      <h2>1. Family Get-Together</h2>
+      <p class="feature-desc">
+      ✓ Venue setup with tables, chairs & basic decor<br>
+      ✓ Light music & background playlist<br>
+      ✓ Simple catering (snacks & soft drinks)<br>
+      ✓ On-site coordinator for smooth execution<br>
+      ✓ 2–3 hour event duration<br><br>
+      <b>Starting at ₹12,000</b><br><br>
+      <a onclick="javascript:pay(12000)" class="feature-desc">Book Now</a>
+      
+    </p>
+      <div class="carousel" id="carousel-haldi">
+        <img src="Together\img (1).jpg" class="active" />
+        <img src="Together\img (2).jpg" />
+        <img src="Together\img (3).jpg" />
+        <img src="Together\img (4).jpg" />
+        <img src="Together\img (5).jpg" />
+        <img src="Together\img (6).jpg" />
+        <img src="Together\img (7).jpg" />
+        <img src="Together\img (8).jpg" />
+        <img src="Together\img (9).jpg" />
+        
+        
+</div>
+      <div class="btn-group">                                 
+        <button onclick="changeImage('haldi', -1)">&#8678; Prev</button>
+        <button onclick="changeImage('haldi', 1)">Next &#8680;</button>
+        
+      </div>
+    </div>
+
+    <div class="package">
+      <h2>2.Family Get-Together +</h2>
+      <p class="feature-desc">
+      ✓ Themed decor with floral & lighting setup<br>
+      ✓ Venue booking & custom layout planning<br>
+      ✓ Live music or DJ setup<br>
+      ✓ Full-course catering with custom menu<br>
+      ✓ Photographer for candid & group shots<br>
+      ✓ Games & activities for all age groups<br>
+      ✓ Dedicated event manager & staff support<br><br>
+      <b>Starting at ₹30,000</b><br><br>
+      <a onclick="javascript:pay(25000)">Book Now</a>
+    </p>
+      <div class="carousel" id="carousel-haldi-plus">
+       <img src="Together\img (11).jpg" class="active" />
+        <img src="Together\img (12).jpg" />
+        <img src="Together\img (13).jpg" />
+        <img src="Together\img (14).jpg" />
+        <img src="Together\img (15).jpg" />
+        <img src="Together\img (16).jpg" />
+        <img src="Together\img (17).jpg" />
+        <img src="Together\img (18).jpg" />
+        
+       </div>
+      <div class="btn-group">
+        <button onclick="changeImage('haldi-plus', -1)">< Prev</button>
+        <button onclick="changeImage('haldi-plus', 1)">Next ></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 Jashn-E-Junction. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+</html>

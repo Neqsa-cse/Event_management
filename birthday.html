@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jashn-E-Junction | Indian Event Management</title>
+  <script src="myjs.js"></script>
+  <link rel="stylesheet" type="text/css" href="pakages.css">
+</head>
+<body>
+<header>
+  <h1>Jashn-E-Junction</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<section id="detail">
+  <h3 style="text-align:center; font-size: 2rem; color: #b55e00;">OUR birthday & anniversary parties packages are follows</h3>
+  <div class="carousel-section">
+    <div class="package">
+      <h2>1. Birthday & Anniversary</h2>
+      <p class="feature-desc">
+      ✓ Standard decor (balloons, banners, basic backdrop)<br>
+      ✓ Music system with party playlist<br>
+      ✓ Cake table setup & basic tableware<br>
+      ✓ Light snacks & soft drinks<br>
+      ✓ Party coordinator (up to 3 hours)<br><br>
+      <b>Starting at ₹8,000</b><br><br>
+      <a onclick="javascript:pay(8000)">Book Now</a>    
+    </p>
+      <div class="carousel" id="carousel-haldi">
+        <img src="Birthday\img (1).jpg"class="active" />
+         <img src="Birthday\img (2).jpg"/>
+         <img src="Birthday\img (3).jpg"/>
+         <img src="Birthday\img (4).jpg"/>
+         <img src="Birthday\img (5).jpg"/>
+         <img src="Birthday\img (6).jpg"/>
+         <img src="Birthday\img (7).jpg"/>
+         <img src="Birthday\img (8).jpg"/>
+         <img src="Birthday\img (9).jpg"/>
+         <img src="Birthday\img (10).jpg"/>        
+      </div>
+      <div class="btn-group">                                 
+        <button onclick="changeImage('haldi', -1)">&#8678; Prev</button>
+        <button onclick="changeImage('haldi', 1)">Next &#8680;</button>  
+      </div>
+    </div>
+    <div class="package">
+      <h2>2. Birthday & Anniversary +</h2>
+      <p class="feature-desc">
+      ✓ Themed decor with balloon arches, LED backdrop<br>
+      ✓ DJ or live music with lighting effects<br>
+      ✓ Designer cake table with personalized props<br>
+      ✓ Full catering (custom menu with desserts)<br>
+      ✓ Photographer & videographer<br>
+      ✓ Activity host, games, and return gifts<br>
+      ✓ Event team with full 5-hour coordination<br><br>
+      <b>Starting at ₹20,000</b><br><br>
+      <a onclick="javascript:pay(20000)">Book Now</a>
+    </p>
+      <div class="carousel" id="carousel-haldi-plus">
+        <img src="Birthday\img (11).jpg"class="active" />
+         <img src="Birthday\img (12).jpg"/>
+         <img src="Birthday\img (13).jpg"/>
+         <img src="Birthday\img (14).jpg"/>
+         <img src="Birthday\img (15).jpg"/>
+         <img src="Birthday\img (16).jpg"/>
+         <img src="Birthday\img (17).jpg"/>
+         <img src="Birthday\img (18).jpg"/>
+         <img src="Birthday\img (19).jpg"/>
+         <img src="Birthday\img (20).jpg"/>
+      </div>
+      <div class="btn-group">
+        <button onclick="changeImage('haldi-plus', -1)">< Prev</button>
+        <button onclick="changeImage('haldi-plus', 1)">Next ></button>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2025 Jashn-E-Junction. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
